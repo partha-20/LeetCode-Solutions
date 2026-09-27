@@ -8,13 +8,16 @@ public:
             if(s[i] == ')') {store2 = i; break;}
             else suffix = s[i] + suffix;
         }
+        if(store2 == -1) return suffix;
         for(int i = 0; i < n; i++){
             if(s[i] == '('){store1 = i; break;}
             else prefix += s[i];
         }
+        
         for(int i = store1; i <= store2; i++){
             if(s[i] == '('){
                 s1.push(s[i]);
+                s
             }
             else if(s[i] == ')'){
                 while((s1.empty() == 0)){
