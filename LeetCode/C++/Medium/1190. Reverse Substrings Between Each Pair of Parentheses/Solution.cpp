@@ -3,7 +3,7 @@ public:
     string reverseParentheses(string s) {
         int n = s.length();
         stack<char> s1; string ans = "", suffix = "", prefix = "", rev = "";
-        int store1 = 0, store2 = 0;
+        int store1 = -1, store2 = -1;
         for(int i = n - 1; i >= 0; i--){
             if(s[i] == ')') {store2 = i; break;}
             else suffix = s[i] + suffix;
@@ -31,7 +31,7 @@ public:
             }
             else s1.push(s[i]);
         }
-        if
+        
         return prefix + rev + suffix;
     }
 };
