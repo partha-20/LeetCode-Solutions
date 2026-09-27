@@ -31,6 +31,7 @@ public:
             }
             else s1.push(s[i]);
         }
+        if
         return prefix + rev + suffix;
     }
 };
